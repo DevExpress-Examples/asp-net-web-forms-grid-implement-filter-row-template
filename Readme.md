@@ -26,7 +26,7 @@ This example demonstrates how to create a column's filter row template, add the 
     </dx:ASPxGridView>
     ```
 
-2. Specify a column's [FilterTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewColumn.FilterTemplate) property, add the [ASPxGridLookup](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridLookup) control to the template, populate the editor with columns, and bind it to a data source.
+2. Specify a column's [FilterTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewColumn.FilterTemplate) property, add an [ASPxGridLookup](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridLookup) editor to the template, populate the editor with columns, and bind it to a data source.
 
     ```aspx
     <dx:GridViewDataTextColumn FieldName="CategoryName">
@@ -54,7 +54,7 @@ This example demonstrates how to create a column's filter row template, add the 
     }
     ```
 
-4. Handle the grid's server-side `CustomCallback` event. In the handler, create a custom filter criteria based on the edit value and call the grid's [ApplyFilterToColumn](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.ApplyFilterToColumn(DevExpress.Web.GridViewDataColumn-DevExpress.Data.Filtering.CriteriaOperator)) method to apply this filter to the grid.
+4. Handle the grid's server-side `CustomCallback` event. In the handler, create custom filter criteria based on the edit value and call the grid's [ApplyFilterToColumn](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.ApplyFilterToColumn(DevExpress.Web.GridViewDataColumn-DevExpress.Data.Filtering.CriteriaOperator)) method to apply the filter criteria to the grid.
 
     ```csharp
     protected void Grid_CustomCallback(object sender, ASPxGridViewCustomCallbackEventArgs e) {
